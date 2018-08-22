@@ -28,7 +28,18 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,  
         results: state.results.concat({id: new Date(), value: state.counter})   // push() instead of concat() may generate unpredictable result
-      };  
+      };
+    case "DELETE_RESULT":
+    //   This is one way of handling delete array in immutable way
+    //   const id = 2;
+    //   const newArray = [...state.results]   // copy an array
+    //   newArray.splice(id, 1)
+
+      const updatedArray = state.results.filter( result => result.id !== action.resultElId)
+      return {
+        ...state,  
+        results: updatedArray,
+      };     
     default:
       return state;
   }
