@@ -1,3 +1,5 @@
+import * as actionTypes from './actions'
+
 const initialState = {
   counter: 0,
   results: []
@@ -5,31 +7,31 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "INCREMENT":
+    case actionTypes.INCREMENT:
       const newState = Object.assign({}, state)  // this approach is similar below
       newState.counter = state.counter + 1
       return newState         
-    case "DECREMENT":
+    case actionTypes.DECREMENT:
       return {
         ...state,  
         counter: state.counter - 1
       };
-    case "ADD":
+    case actionTypes.ADD:
       return {
         ...state,    
         counter: state.counter + action.val
       };
-    case "SUBTRACT":
+    case actionTypes.SUBTRACT:
       return {
         ...state,    
         counter: state.counter - action.val
       };
-    case "STORE_RESULT":
+    case actionTypes.STORE_RESULT:
       return {
         ...state,  
         results: state.results.concat({id: new Date(), value: state.counter})   // push() instead of concat() may generate unpredictable result
       };
-    case "DELETE_RESULT":
+    case actionTypes.DELETE_RESULT:
     //   This is one way of handling delete array in immutable way
     //   const id = 2;
     //   const newArray = [...state.results]   // copy an array
