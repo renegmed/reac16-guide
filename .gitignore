@@ -8,6 +8,8 @@
 /burger_builder/package-lock.json
 /chap14_redux/node_modules
 /chap14_redux/package-lock.json
+/chap14-redux-example/node_modules
+/chap14-redux-example/package-lock.json
 
 # testing
 /coverage
