@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
-/react-complete-guide/node_modules
-/react-complete-guide/package-lock.json
+/04_lists_and_conditionals/node_modules
+/04_lists_and_conditionals/package-lock.json
 
 # testing
 /coverage
