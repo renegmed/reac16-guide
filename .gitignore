@@ -4,6 +4,14 @@
 /node_modules
 /react-complete-guide/node_modules
 /react-complete-guide/package-lock.json
+/burger_builder/node_modules
+/burger_builder/package-lock.json
+/chap14_redux/node_modules
+/chap14_redux/package-lock.json
+/chap14-redux-example/node_modules
+/chap14-redux-example/package-lock.json
+/chap15-redux-project/node_modules
+/chap15-redux-project/package-lock.json
 
 # testing
 /coverage
