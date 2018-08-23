@@ -2,10 +2,6 @@
 
 # dependencies
 /node_modules
-/react-complete-guide/node_modules
-/react-complete-guide/package-lock.json
-/burger_builder/node_modules
-/burger_builder/package-lock.json
 /chap14_redux/node_modules
 /chap14_redux/package-lock.json
 /chap14-redux-example/node_modules
