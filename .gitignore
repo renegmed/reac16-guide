@@ -2,8 +2,6 @@
 
 # dependencies
 /node_modules
-/react-complete-guide/node_modules
-/react-complete-guide/package-lock.json
 /burger_builder/node_modules
 /burger_builder/package-lock.json
 
