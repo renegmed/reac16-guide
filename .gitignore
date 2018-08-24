@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
-/react-complete-guide/node_modules
-/react-complete-guide/package-lock.json
+/chap16-redux-advanced/node_modules
+/chap16-redux-advanced/package-lock.json
 
 # testing
 /coverage
