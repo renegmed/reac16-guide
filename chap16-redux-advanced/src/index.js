@@ -10,8 +10,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const rootReducer = combineReducers({
-    ctr: counterReducer,
-    res: resultReducer
+    ctryyy: counterReducer,
+    resxxx: resultReducer
 });
 
 const store = createStore(rootReducer);

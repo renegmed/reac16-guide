@@ -27,14 +27,18 @@ class Counter extends Component {
 }
 
 const mapStateToProps = state => {
-    return {
+    console.log('++++ Counter.state +++++')
+    console.log(state)
+    return {  // state values are updated by reducers. ctryyy and resxxx are defined in index.js for redux combined reducer
 
-        ctr: state.ctr.counter,
-        storedResults: state.res.results
+        ctr: state.ctryyy.counterzzz,
+        storedResults: state.resxxx.resultss
     }
 };
 
 const mapDispatchToProps = dispatch => {
+    console.log('+++ Counter.dispatch ++++')
+    //.log(dispatch)
     return {
         onIncrementCounter: () => dispatch({type: actionTypes.INCREMENT}),
         onDecrementCounter: () => dispatch({type: actionTypes.DECREMENT}),
